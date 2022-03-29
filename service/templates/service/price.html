@@ -1,0 +1,12 @@
+{% extends 'service/index.html' %}
+
+{% block content %}
+<div id="price">
+    <ol>
+        {% for service in services %}
+            <li>{{ service }}</li>
+        {% endfor %}
+    </ol>
+</div>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Palette+Mosaic&display=swap');
+
+.conteiner{
+    width: 91%;
+    margin: 0 auto;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Comfortaa';
+    font-weight: 700;
+}
+
+.logo a{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Palette Mosaic', cursive;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?cs=srgb&dl=pexels-c%C3%A1tia-matos-1072179.jpg&fm=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    position:fixed;
+    width: 90%;
+    background-color: rgba(3, 38, 59, 0.6);
+    border-radius: 0 0 16px 16px;
+    margin:auto;
+    right:0;
+    left:0;
+    top: 0;
+    padding: 0 5px 0 5px;
+}
+
+.header nav ol{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.content{
+    padding-top: 40px;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#price{
+    margin-left: 20px;
+}
+
+.content *{
+    color: rgb(255, 221, 176);
+}

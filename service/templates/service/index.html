@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="data:;base64,=">
+    <title>CTO-0.3</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ol>
+                <li><a href="/home/">Главная</a></li>
+                <li><a href="/price/">Список Услуг</a></li>
+                <div class="logo">
+                    <h1><a href="/home/">CTO-0.3</a></h1>
+                </div>
+                <li><a href="/about">О Нас</a></li>
+                <li><a href="/admin/">Админка</a></li>
+            </ol>
+        </nav>
+    </header>
+    <div class="conteiner">
+        
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer class="footer">
+    
+        </footer>
+    </div>
+</body>
+</html>
