@@ -3,7 +3,11 @@
 
 .conteiner{
     width: 91%;
+    max-width: 1080px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 *{
@@ -31,6 +35,7 @@ html, body{
 .header{
     position:fixed;
     width: 90%;
+    max-width: 1070px;
     background-color: rgba(3, 38, 59, 0.6);
     border-radius: 0 0 16px 16px;
     margin:auto;
@@ -56,14 +61,149 @@ a{
 
 .content{
     padding-top: 40px;
-    height: 200vh;
     background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction:column;
+    flex: 1 0 auto;
 }
 
-#price{
-    margin-left: 20px;
-}
+
 
 .content *{
     color: rgb(255, 221, 176);
+}
+/* ------------------------------------------ABOUT */
+#about{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .item{
+    display: flex;
+    flex-direction: column;
+}
+
+#about li{
+    margin: 10px 0 10px 0;
+    display: flex;
+    list-style: none;
+}
+
+#about img{
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+}
+
+#about li p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* ------------------------------------------PRICE */
+#price{
+    display: flex;
+    justify-content: center;
+}
+
+#price .price-list{
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+#price .cost{
+    width: 20%;
+    text-align: center;
+}
+
+#price .number{
+    width: 5%;
+    text-align: center;
+}
+
+#price thead{
+    background-color: #00987adc;
+}
+
+#price .price-list th,
+#price .price-list td{
+    padding: 12px 15px; 
+}
+
+#price .price-list tbody tr:last-of-type{
+    border-bottom: 2px solid #00987a4f;
+}
+/* ------------------------------------------HOME */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home .post{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#home .post > div{
+    margin: 5px 10px 5px 10px;
+} 
+
+#home .post .date{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ------------------------------------------FOOTER */
+.footer{
+    background-color: rgba(3, 38, 59, 0.6);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    margin-top: auto;
+}
+
+.footer .row{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer input{
+    width: 98%;
+    border-radius: 6px;
+    height: 25px;
+    margin-bottom: 10px
+}
+
+.footer .inp-send{
+    max-width: 100px;
+    text-align: center;
+}
+
+.footer .inp-text{
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding-left: 1px;
+}
+
+.footer p{
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 0px 20px;
 }

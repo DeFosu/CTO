@@ -29,3 +29,12 @@ class Order(models.Model):
 
     def __str__(self):
         return str(self.id_customer) + ' -- ' + self.number
+
+class News(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    published_date = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title

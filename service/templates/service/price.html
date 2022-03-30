@@ -2,11 +2,24 @@
 
 {% block content %}
 <div id="price">
-    <ol>
+    <table class="price-list">
+        <thead>
+            <tr>
+                <td class="number">№</td>
+                <td class="description">Наши услуги</td>
+                <td class="cost">Цена / UAH</td>
+            </tr>
+        </thead>
         {% for service in services %}
-            <li>{{ service }}</li>
-        {% endfor %}
-    </ol>
+        <tbody>
+            <tr>
+                <td class="number">{{ service.id }}</td>
+                <td class="description">{{ service.description }}</td>
+                <td class="cost">{{ service.cost }}</td>
+            </tr>
+        </tbody>
+        
+    {% endfor %}
+    </table>
 </div>
-
 {% endblock %}

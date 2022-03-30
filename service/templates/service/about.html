@@ -1,7 +1,34 @@
 {% extends 'service/index.html' %}
-
+{% load static %}
 {% block content %}
 <div id="about">
-    <h1>IT'S ABOUT!!!!</h1>
+    <h1>О Нас</h1>
+    <div class="item">
+        <h2>Качество услуг</h2>
+        <ol>
+            <li>
+                <img src="{% static 'img/location_on_white_48dp.svg' %}" alt="PLACE">
+                <div class="desc">
+                    <h3>Удобное местоположение</h3>
+                    <p>Наш автосервис находится в самом центре города.  Всего 1 минута от м. Научная.</p>
+                </div>
+            </li>
+            <li>
+                <img src="{% static 'img/directions_car_white_48dp.svg' %}" alt="FREE">
+                <div class="desc">
+                    <h3>Бесплатная доставка клиента</h3>
+                    <p>Не хотите ждать у нас? Мы доставим вас в любое удобное для вас место.</p>
+                </div>
+            </li>
+            <li>
+                <img src="{% static 'img/paid_white_48dp.svg' %}" alt="JOB">
+                <div class="desc">
+                    <h3>Гарантия на нашу работу</h3>
+                    <p>Мы на столько уверенны в качестве выполненной нами работы, что даем на неё пожизненную гарантию!</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+    
 </div>
 {% endblock %}
