@@ -1,0 +1,9 @@
+{% extends 'service/index.html' %}
+
+{% block content %}
+<div id="result">
+    {% for service in tmp %}
+        <p>{{service.description}}
+            {{service.cost}}  </p>
+    {% endfor %}
+{% endblock %}

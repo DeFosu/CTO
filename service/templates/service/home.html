@@ -2,6 +2,13 @@
 
 {% block content %}
 <div id="home">
+    <div class="search">
+        <form action="{% url 'result' %}" method="get">
+            <input name="q" type="text" placeholder="Phone: 063...">
+            <button type="submit">Search</button>
+        </form> 
+    </div>
+    
     {% for post in posts %}
     <div class="post">
         <div class="title">

@@ -168,6 +168,41 @@ a{
     justify-content: flex-end;
 }
 
+#home .search{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .search form{
+    height: 50px;
+    width: 100%;
+}
+
+#home .search form input{
+    height: 100%;
+    margin: 0;
+    border: none;
+    padding: 0px 0px 0px 10px;
+    border-radius: 10px 10px 0 0;
+    width: 96%;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(255, 221, 176);
+}
+
+#home .search form button{
+    height: 70%;
+    margin: 0;
+    border: none;
+    padding: 2px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    background:#044b77;
+}
+
 /* ------------------------------------------FOOTER */
 .footer{
     background-color: rgba(3, 38, 59, 0.6);

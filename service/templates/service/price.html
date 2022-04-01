@@ -11,15 +11,15 @@
             </tr>
         </thead>
         {% for service in services %}
-        <tbody>
-            <tr>
-                <td class="number">{{ service.id }}</td>
-                <td class="description">{{ service.description }}</td>
-                <td class="cost">{{ service.cost }}</td>
-            </tr>
-        </tbody>
-        
-    {% endfor %}
+            <tbody>
+                <tr>
+                    <td class="number">{{ service.id }}</td>
+                    <td class="description">{{ service.description }}</td>
+                    <td class="cost">{{ service.cost }}</td>
+                </tr>
+            </tbody>
+        {% endfor %}
     </table>
+    
 </div>
 {% endblock %}
