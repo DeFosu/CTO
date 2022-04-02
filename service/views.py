@@ -1,3 +1,5 @@
+from email import message
+from urllib import request
 from django.shortcuts import render
 from django.utils import timezone
 from .models import *
@@ -15,7 +17,10 @@ def price(request):
     return render(request, 'service/price.html', {'services':services})
 
 def result(request):
-    query = request.GET.get('q')
-    tmp_list = Service.objects.filter(Q(cost__icontains = query)) 
+    if (request.GET.get('q')):
+        query = request.GET.get('q')
+        tmp_list = Service.objects.filter(Q(cost__icontains = query)) 
     return render(request, 'service/result.html', {'tmp': tmp_list})
+
+
     

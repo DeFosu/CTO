@@ -3,6 +3,7 @@
 {% block content %}
 <div id="home">
     <div class="search">
+        <h1>Просмотр данных о вашем заказе<br>по номеру телефона</h1>
         <form action="{% url 'result' %}" method="get">
             <input name="q" type="text" placeholder="Phone: 063...">
             <button type="submit">Search</button>
